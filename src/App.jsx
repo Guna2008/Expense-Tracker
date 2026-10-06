@@ -24,6 +24,21 @@ function App() {
         </div>
       </div>
 
+      <div className="transaction-form">
+        <h2>Add Transaction</h2>
+
+        <input type="text" placeholder="Transaction title"/>
+
+        <input type="number" placeholder="Amount"/>
+
+        <select>
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+
+        <button>Add Transaction</button>
+      </div>
+
       <div className="transactions">
         <h2>Recent Transactions</h2>
         <p>No transactions yet.</p>

@@ -54,6 +54,24 @@
   color: #777;
 }
 
+.transaction-form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.transaction-form input, .transaction-form select, .transaction-form button{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
 @media (max-width: 700px) {
   .summary {
     grid-template-columns: 1fr;
