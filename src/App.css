@@ -1,7 +1,5 @@
 
-#root {
-  width: 100%;
-}
+#root {width: 100%;}
 
 .app {
   max-width: 1100px;
@@ -73,11 +71,6 @@
 }
 
 @media (max-width: 700px) {
-  .summary {
-    grid-template-columns: 1fr;
-  }
-
-  .app {
-    padding: 24px 16px;
-  }
+  .summary {grid-template-columns: 1fr;}
+  .app {padding: 24px 16px;}
 }

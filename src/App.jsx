@@ -1,7 +1,10 @@
-
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+  
+  const [title, setTitle] = useState("")
+
   return (
     <div className="app">
       <h1>Expense Tracker</h1>
@@ -27,7 +30,11 @@ function App() {
       <div className="transaction-form">
         <h2>Add Transaction</h2>
 
-        <input type="text" placeholder="Transaction title"/>
+        <input
+          type="text"
+           placeholder="Transaction title"
+           value={title} 
+           onChange={(event)=>setTitle(event.target.value)}/>
 
         <input type="number" placeholder="Amount"/>
 
@@ -36,7 +43,7 @@ function App() {
           <option value="expense">Expense</option>
         </select>
 
-        <button>Add Transaction</button>
+        <button id = "button">Add Transaction</button>
       </div>
 
       <div className="transactions">
